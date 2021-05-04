@@ -20,18 +20,28 @@
             <h3>Ingredients</h3>
             <section class="toppings">
                 <div class="form-toppings">
-                     <label for="cheese">Cheese</label>
-                     <input type="checkbox" name="cheese" id="cheese">
-                     <label for="egg">Egg</label>
-                     <input type="checkbox" name="egg" id="egg">
-                     <label for="mustard">Mustard</label>
-                     <input type="checkbox" name="mustard" id="mustard">
-                     <label for="tomato">Tomato</label>
-                     <input type="checkbox" name="tomato" id="tomato">
-                     <label for="lettuce">Lettuce</label>
-                     <input type="checkbox" name="lettuce" id="lettuce">
-                     <label for="ketchup">Ketchup</label>
-                     <input type="checkbox" name="ketchup" id="ketchup">
+                    <label for="cheese">Cheese</label>
+                    <input type="checkbox" name="cheese" id="cheese" data-price="1.0">
+                </div>   
+                <div class="form-toppings">
+                    <label for="egg">Egg</label>
+                    <input type="checkbox" name="egg" id="egg" data-price="1.5">
+                </div>  
+                <div class="form-toppings">
+                    <label for="mustard">Mustard</label>
+                    <input type="checkbox" name="mustard" id="mustard" data-price="0.5">
+                </div>   
+                <div class="form-toppings">
+                    <label for="tomato">Tomato</label>
+                     <input type="checkbox" name="tomato" id="tomato" data-price="1.0">
+                </div>    
+                <div class="form-toppings">
+                    <label for="lettuce">Lettuce</label>
+                    <input type="checkbox" name="lettuce" id="lettuce" data-price="1.0">
+                </div>   
+                <div class="form-toppings">
+                    <label for="ketchup">Ketchup</label>
+                    <input type="checkbox" name="ketchup" id="ketchup" data-price="0.5">
                 </div>
             </section>
             <div class="discount">
@@ -45,8 +55,12 @@
        
     </main>
     <footer id="site_footer">
-        <h4>Your Price</h4>
-
+        <div class="container">
+            <h4>Your Price</h4>
+            <span>50£</span>
+        </div>
+        
     </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
