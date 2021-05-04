@@ -12,31 +12,63 @@ var toppingsWithPrice = [["Cheese", 1.0], ["Egg", 1.5], ["Mustard", 0.5], ["Toma
 //to get the price of a topping "Mustard" we use
 //console.log(toppingsWithPrice[2][1]);
 
-function calculateHamburgerPrice (toppings) {
-    if (toppings === toppingsWithPrice[0][0]) {
-      hamburgerPrice += toppingsWithPrice[0][1];   
-      console.log(hamburgerPrice);     
-    } else if (toppings ===  toppingsWithPrice[1][0]) {
-      hamburgerPrice += toppingsWithPrice[1][1];   
-      console.log(hamburgerPrice);
+// function calculateHamburgerPrice (toppings) {
+//     if (toppings === toppingsWithPrice[0][0]) {
+//       hamburgerPrice += toppingsWithPrice[0][1];   
+//       console.log(hamburgerPrice);     
+//     } else if (toppings ===  toppingsWithPrice[1][0]) {
+//       hamburgerPrice += toppingsWithPrice[1][1];   
+//       console.log(hamburgerPrice);
   
-    } else if (toppings === toppingsWithPrice[2][0]) {
-      hamburgerPrice += toppingsWithPrice[2][1];   
-      console.log(hamburgerPrice);
+//     } else if (toppings === toppingsWithPrice[2][0]) {
+//       hamburgerPrice += toppingsWithPrice[2][1];   
+//       console.log(hamburgerPrice);
   
-    } else if (toppings ===  toppingsWithPrice[3][0]) {
-      hamburgerPrice += toppingsWithPrice[3][1];   
-      console.log(hamburgerPrice);
+//     } else if (toppings ===  toppingsWithPrice[3][0]) {
+//       hamburgerPrice += toppingsWithPrice[3][1];   
+//       console.log(hamburgerPrice);
   
-    } else if (toppings ===  toppingsWithPrice[4][0]) {
-      hamburgerPrice += toppingsWithPrice[4][1];   
-      console.log(hamburgerPrice);
+//     } else if (toppings ===  toppingsWithPrice[4][0]) {
+//       hamburgerPrice += toppingsWithPrice[4][1];   
+//       console.log(hamburgerPrice);
   
-    } else if (toppings ===  toppingsWithPrice[5][0]) {
-      hamburgerPrice += toppingsWithPrice[5][1];   
-      console.log(hamburgerPrice);
+//     } else if (toppings ===  toppingsWithPrice[5][0]) {
+//       hamburgerPrice += toppingsWithPrice[5][1];   
+//       console.log(hamburgerPrice);
   
-    }
-  }
+//     }
+//   }
   
   calculateHamburgerPrice(toppingsWithPrice[5][0]);
+
+
+  document.querySelector('button').addEventListener('click', function() {
+    function calculateHamburgerPrice (toppings) {
+        if (toppings === toppingsWithPrice[0][0]) {
+          hamburgerPrice += toppingsWithPrice[0][1];   
+          console.log(hamburgerPrice);     
+        } else if (toppings ===  toppingsWithPrice[1][0]) {
+          hamburgerPrice += toppingsWithPrice[1][1];   
+          console.log(hamburgerPrice);
+      
+        } else if (toppings === toppingsWithPrice[2][0]) {
+          hamburgerPrice += toppingsWithPrice[2][1];   
+          console.log(hamburgerPrice);
+      
+        } else if (toppings ===  toppingsWithPrice[3][0]) {
+          hamburgerPrice += toppingsWithPrice[3][1];   
+          console.log(hamburgerPrice);
+      
+        } else if (toppings ===  toppingsWithPrice[4][0]) {
+          hamburgerPrice += toppingsWithPrice[4][1];   
+          console.log(hamburgerPrice);
+      
+        } else if (toppings ===  toppingsWithPrice[5][0]) {
+          hamburgerPrice += toppingsWithPrice[5][1];   
+          console.log(hamburgerPrice);
+      
+        }
+      }
+
+
+  } )
