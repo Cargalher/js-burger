@@ -105,7 +105,7 @@
 
 
 function attempt(array, element) {
-  for (var i=0; i<array.length; i++) {
+  /*for (var i=0; i<array.length; i++) {
 
     element.insertAdjacentHTML('afterbegin',
     `
@@ -118,7 +118,7 @@ function attempt(array, element) {
 
 
   }
-}
+}*/
 
 var hamburgerPrice = 9.50;
 
@@ -129,4 +129,3 @@ var toppingsWithPrice = [["Cheese", 1.0], ["Egg", 1.5], ["Mustard", 0.5], ["Toma
 var toppingsElement = document.querySelector('.toppings');
 
 attempt(toppingsWithPrice, toppingsElement);
-
