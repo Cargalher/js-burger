@@ -42,7 +42,7 @@ var toppingsWithPrice = [["Cheese", 1.0], ["Egg", 1.5], ["Mustard", 0.5], ["Toma
 //calculateHamburgerPrice(toppingsWithPrice[5][0]);
 
 
-  document.querySelector('button').addEventListener('onclick', function() {
+document.getElementById("calc_btn").addEventListener("click", displayDate);
     function calculateHamburgerPrice (toppings) {
         if (toppings === toppingsWithPrice[0][0]) {
           hamburgerPrice += toppingsWithPrice[0][1];   
@@ -68,7 +68,9 @@ var toppingsWithPrice = [["Cheese", 1.0], ["Egg", 1.5], ["Mustard", 0.5], ["Toma
           console.log(hamburgerPrice);
       
         }
+        return hamburgerPrice;
+        console.log(hamburgerPrice);
       }
 
 
-  } )
+  

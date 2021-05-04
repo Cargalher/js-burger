@@ -7,3 +7,9 @@
     width: 80%;
     margin:auto;
 }
+#site_header{
+    background-color: rgb(243, 176, 52);
+}
+#site_footer{
+    background-color: rgb(221, 99, 99);
+}
