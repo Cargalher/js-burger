@@ -11,3 +11,14 @@ var toppingsWithPrice = [["Cheese", 1.0], ["Egg", 1.5], ["Mustard", 0.5], ["Toma
 
 //to get the price of a topping "Mustard" we use
 //console.log(toppingsWithPrice[2][1]);
+
+functions calculateBurgerPrice (toppings){
+
+   if(toppings === "Cheese"){
+        
+    } else if (toppings === "Egg"){
+        
+    } else if (toppings === "Mustard"){
+
+    }
+}
