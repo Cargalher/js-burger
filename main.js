@@ -18,7 +18,7 @@ var discountList = ['code003PA', 'code004PA', 'code005PA'];
 console.log(discountList);
 
 
-// function automatically generated the HTML markup for toppings with prices
+// function to automatically generate the HTML markup for toppings with prices from the array toppingsWithPrice;
 function autotoppings(array, element) {
   for (var i=0; i<3; i++) {
 
@@ -34,8 +34,8 @@ function autotoppings(array, element) {
     `
     );
 
-
   }
+
   for (var i=3; i<6; i++) {
 
     element.insertAdjacentHTML('afterbegin',
@@ -50,7 +50,6 @@ function autotoppings(array, element) {
     `
     );
 
-
   }
 }
 
@@ -58,7 +57,6 @@ function autotoppings(array, element) {
 var toppingsElement = document.querySelector('.toppings');
 //calling the function to automatically generate my toppings code in HTML from the Array toppingsWithPrice 
 // autotoppings(toppingsWithPrice, toppingsElement);
-
 
 
 
@@ -83,9 +81,35 @@ console.log(hamburgerPrice);
     //checking the total price of the toppings selected, to be added to the burger price;
     console.log(toppingsSum);
 
+    //calculating the total burger price adding to the basic burger price the toppings selected
     var totalBurgerPrice = hamburgerPrice + toppingsSum;
     console.log(totalBurgerPrice);
+    
+    //storing the text input from the user as a variable to check against the possible discounts in the array discountList; 
+    userDiscount = document.getElementById('discount').value;
+    console.log(userDiscount);
 
-    document.getElementById('totalPrice').innerHTML= totalBurgerPrice + " €";
+    //setting a variable to store the amount of discount
+    var discountAmount = 1.0;
+    //considering the case in wich the user insert in the text input a valid discount coupon and returning the total burger
+    //price after the discount has been applied or the burger price if the user has not inserted a valid discount ticket;
+    switch (userDiscount) {
+        case discountList[0]:
+            totalBurgerPrice = totalBurgerPrice - discountAmount
+            document.getElementById('totalPrice').innerHTML= totalBurgerPrice + " €";
+            break;
+        case discountList[1]:
+            totalBurgerPrice = totalBurgerPrice - discountAmount
+            document.getElementById('totalPrice').innerHTML= totalBurgerPrice + " €";
+            break;
+        case discountList[2]:
+            totalBurgerPrice = totalBurgerPrice - discountAmount
+            document.getElementById('totalPrice').innerHTML= totalBurgerPrice + " €";
+            break;    
+        default:
+            document.getElementById('totalPrice').innerHTML= totalBurgerPrice + " €";
+            break;
+    }
 
-    });
+
+});
