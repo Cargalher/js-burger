@@ -18,7 +18,7 @@ var discountList = ['code003PA', 'code004PA', 'code005PA'];
 console.log(discountList);
 
 
-
+// function automatically generated the HTML markup for toppings with prices
 function autotoppings(array, element) {
   for (var i=0; i<3; i++) {
 
