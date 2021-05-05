@@ -52,6 +52,11 @@ body{
 }
 
 /* main */
+.d_flex1, .d_flex2{
+    display: flex;
+    flex-direction: column;
+}
+
 img{
     height:30px;
 }
